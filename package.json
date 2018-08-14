@@ -1,0 +1,28 @@
+{
+  "name": "seyali",
+  "version": "1.0.0",
+  "description": "SEYALI Tamil Technical Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MMohanram1/Seyali.git"
+  },
+  "keywords": [
+    "Seyali",
+    "Tamil",
+    "Technical"
+  ],
+  "author": "Mohan Ram M",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MMohanram1/Seyali/issues"
+  },
+  "homepage": "https://github.com/MMohanram1/Seyali#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.18.3"
+  }
+}

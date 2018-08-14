@@ -1,0 +1,310 @@
+html,
+body {
+    font-family: 'Mukta Malar', sans-serif;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Mukta Malar', sans-serif;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+#loading_wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+#loading {
+    width: 250px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    top: 45%;
+    transform: translateY(-45%);
+}
+
+.header {
+    width: 100%;
+    height: 88px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header #logo {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header img {
+    height: 65%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header span {
+    font-family: 'Pavanam', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    text-decoration: none;
+    color: #353b48;
+}
+
+#search_icon {
+    margin-left: 50px;
+    color: #353b48;
+}
+
+#bell_icon {
+    margin-left: 30px;
+    color: #353b48;
+}
+
+#bookmark_icon {
+    margin-right: 30px;
+    color: #353b48;
+}
+
+#user_icon {
+    margin-right: 50px;
+    color: #353b48;
+}
+
+.nav {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Meera Inimai', sans-serif;
+}
+
+.underline {
+    font-family: 'Mukta Malar', sans-serif;
+    font-size: 18px;
+    font-weight: 1000;
+    display: inline-block;
+    position: relative;
+    margin-left: 95px;
+    padding-bottom: 3px;
+    color: #485460;
+}
+
+.underline:before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 1px;
+    bottom: 0;
+    border-bottom: 2px solid #ff5e57;
+}
+
+.container {
+    display: block;
+    margin-left: 100px;
+    margin-right: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+#trendingTech_1 {
+    display: inline-block;
+}
+
+#trendingTech_1 img {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#trendingTech_1 p {
+    display: block;
+    position: relative;
+    font-family: 'Mukta Malar', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#bookmark_icon_news {
+    color: #487eb0;
+    height: 20px;
+    margin: 0;
+}
+
+#trendingTech_2 {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.tech_news img {
+    object-fit: cover;
+    width: 75px;
+    height: 50px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#bookmark_icon_small {
+    color: #487eb0;
+    height: 15px;
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer div {
+    display: inline;
+}
+
+footer p {
+    display: inline;
+    font-weight: 500;
+    font-size: 18px;
+    color: #485460;
+}
+
+.footIcon {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.footClass {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+#developer {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#heart {
+    color: tomato;
+}
+
+#mail {
+    color: #353b48;
+}
+
+#github {
+    color: #353b48;
+}
+
+#linkedin {
+    color: #353b48;
+}
+
+#facebook {
+    color: #353b48;
+}
+
+#field {
+    margin-left: 32%;
+}
+
+#secondContainer {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+#tracks {
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+a,u {
+    text-decoration: none !important;
+    color: #353b48;
+}
+
+a:hover {
+    color: #353b48;
+}
+
+#tracks img {
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+#middleLine {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+#curated {
+    border-right: 1px solid #ecf0f1;
+}
+
+.english {
+    font-family: "Helvetica", sans-serif;
+}
+
+#tracks {
+    margin-top: 20px;
+}
+
+#tracks div p {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#plus {
+    margin-left: 15px;
+    color: #487eb0;
+    height: 15px;
+}
+
+#curatedContent a img{
+    width: 150px;
+    height: 100px;
+    margin-right: 5px;
+}
+
+#curatedContent a p{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.badge{
+    margin-left: 20px; 
+}

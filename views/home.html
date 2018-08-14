@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8" lang="en,ta">
+    <title>செயலி - தமிழ் வழி கணினி கல்வி</title>
+    <link rel="icon" type="image/png" href="assets/coding.png">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Meera+Inimai|Mukta+Malar:200,300,400,500,600,700,800|Pavanam&amp;subset=latin-ext,tamil" rel="stylesheet">
+
+    <!--Include Bootstrap-->
+    <link rel="stylesheet" href="library/css/bootstrap.min.css" type="text/css">
+    <script src="library/jquery-3.3.1.min.js" type="text/javascript"></script>
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+    <!--Feather Icon-->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <!--Lottie-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.13.0/bodymovin.js" type="text/javascript"></script>
+
+    <!--Include Custom CSS and JS-->
+    <link rel="stylesheet" href="css/home.css" type="text/css">
+    <script src="js/home.js" type="text/javascript"></script>
+
+</head>
+
+<body onload="loaderFunction()" style="margin:0;">
+
+    <div id="loading_wrapper">
+        <div id="loading"></div>
+    </div>
+
+    <div class="fade-in" id="afterLoad">
+
+        <div class="header">
+            <div>
+                <i data-feather="search" id="search_icon"></i>
+                <script>
+                    feather.replace();
+                </script>
+                <i data-feather="bell" id="bell_icon"></i>
+                <script>
+                    feather.replace();
+                </script>
+            </div>
+            <div id="logo">
+                <img src="assets/coding.png" alt="Seyali Logo">
+                <span>செயலி</span>
+            </div>
+            <div>
+                <i data-feather="bookmark" id="bookmark_icon"></i>
+                <script>
+                    feather.replace();
+                </script>
+                <i data-feather="user" id="user_icon"></i>
+                <script>
+                    feather.replace();
+                </script>
+            </div>
+        </div>
+
+        <div class="nav navbar border-bottom">
+            <ul class="list-inline nav navbar">
+                <li class="list-inline-item w-10 p-3">முகப்பு</li>
+                <li class="list-inline-item w-10 p-3">இணையம்</li>
+                <li class="list-inline-item w-10 p-3">ஜாவா</li>
+                <li class="list-inline-item w-10 p-3">பைத்தான்</li>
+                <li class="list-inline-item w-10 p-3">ஆன்ட்ராய்டு</li>
+                <li class="list-inline-item w-10 p-3">செய்திகள்</li>
+            </ul>
+        </div>
+
+        <br>
+
+        <p class="underline">புதிய செய்தி</p>
+
+        <div class="container" id="containerTechNews">
+
+            <div class="row">
+
+                <div class="col-7" id="trendingTech_1">
+                    <img src="assets/walmart_microsoft.jpg" alt="Walmart and Microsoft">
+                    <p>
+                        அமேசானின் போட்டியை எதிர்கொள்ள மைக்ரோசாஃப்ட் நிறுவனம் வால்மார்ட்டுடன் ஒப்பந்தம்
+                        <i data-feather="bookmark" id="bookmark_icon_news"></i>
+                        <script>
+                            feather.replace();
+                        </script>
+                    </p>
+                </div>
+
+                <div class="col-4" id="trendingTech_2">
+
+                    <ul class="list-group list-group-flush">
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between tech_news">
+                                <img src="assets/linkedin.png" alt="Linked In">
+                                <p>
+                                    லிங்கிடு இன் இந்திய வாடிக்கையாளர் எண்ணிக்கை 4 வருடத்தில் இரட்டிப்பாகி 5 கோடியை கடந்தது
+                                    <i data-feather="bookmark" id="bookmark_icon_small"></i>
+                                    <script>
+                                        feather.replace();
+                                    </script>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between tech_news">
+                                <img src="assets/netflix.png" alt="netflix logo">
+                                <p>
+                                    நெட்ஃபிளிக்ஸின் சந்தாதாரர் வளர்ச்சி முதலீட்டாளர் எதிர்பார்ப்பினை நிறைவேற்ற தவறியது
+                                    <i data-feather="bookmark" id="bookmark_icon_small"></i>
+                                    <script>
+                                        feather.replace();
+                                    </script>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between tech_news">
+                                <img src="assets/upi.jpg" alt="netflix logo">
+                                <p>
+                                    யுபிஐ 2.0 இந்த வாரம் வெளிவருகிறது ; எதிர்பார்க்கப்படும் முக்கிய அம்சங்கள் எவை?
+                                    <i data-feather="bookmark" id="bookmark_icon_small"></i>
+                                    <script>
+                                        feather.replace();
+                                    </script>
+                                </p>
+                            </div>
+                        </a>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <br>
+        <hr id="middleLine"><br>
+
+        <p class="underline" style="display: inline;">தேர்வுசெய்யப்பட்டவை</p>
+        <p class="underline" style="display: inline;" id="field">தடங்கள்</p>
+
+        <div class="container" id="secondContainer">
+            <div class="row">
+                <div class="col-6" id="curated">
+                    <ul class="list-group" id="curatedContent">
+                        <a href="#" class="list-group-item border-0 flex-column">
+                            <div class="d-flex w-100">
+                                <img src="assets/pythonSlow.jpg" alt="slow python" class="english">
+                                <p>
+                                    பைத்தான் ஏன் வேகம் குறைவாக இருக்கிறது?
+                                    <i data-feather="bookmark" id="bookmark_icon_small"></i>
+                                    <script>
+                                        feather.replace();
+                                    </script>
+                                    <a href="#" class="badge badge-light badge-pill">பைத்தான்</a>
+                                </p>
+                            </div>
+                        </a>
+                        <hr id="middleLine">
+                        <a href="#" class="list-group-item border-0 flex-column">
+                            <div class="d-flex w-100">
+                                <img src="assets/objectDetection.jpg" alt="slow python" class="english">
+                                <p>
+                                    பைத்தான் மூலம் பொருட்களை கண்டறிவது எப்படி?
+                                    <i data-feather="bookmark" id="bookmark_icon_small"></i>
+                                    <script>
+                                        feather.replace();
+                                    </script>
+                                    <a href="#" class="badge badge-light badge-pill">பைத்தான்</a>
+                                </p>
+                            </div>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <ul class="list-group" id="tracks">
+                        <a href="#" class="list-group-item border-0 flex-column">
+                            <div class="d-flex w-100">
+                                <img src="assets/html.png" alt="html version 5" class="english">
+                                <p>
+                                    HTML 5
+                                    <i data-feather="plus-square" class="plus"></i>
+                                    <script>
+                                        feather.replace();
+                                    </script>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item border-0 flex-column">
+                            <div class="d-flex w-100">
+                                <img src="assets/css.png" alt="css" class="english">
+                                <p>
+                                    CSS 3
+                                    <i data-feather="plus-square" class="plus"></i>
+                                    <script>
+                                        feather.replace();
+                                    </script>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item border-0 flex-column">
+                            <div class="d-flex w-100">
+                                <img src="assets/java.png" alt="java">
+                                <p>
+                                    ஜாவா
+                                    <i data-feather="plus-square" class="plus"></i>
+                                    <script>
+                                        feather.replace();
+                                    </script>
+                                </p>
+                            </div>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="col-3">
+                    <ul class="list-group" id="tracks">
+                        <a href="#" class="list-group-item border-0 flex-column">
+                            <div class="d-flex w-100">
+                                <img src="assets/python.png" alt="python">
+                                <p>
+                                    பைத்தான்
+                                    <i data-feather="plus-square" class="plus"></i>
+                                    <script>
+                                        feather.replace();
+                                    </script>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item border-0 flex-column">
+                            <div class="d-flex w-100">
+                                <img src="assets/android.png" alt="android">
+                                <p>
+                                    ஆன்ட்ராய்டு
+                                    <i data-feather="plus-square" class="plus"></i>
+                                    <script>
+                                        feather.replace();
+                                    </script>
+                                </p>
+                            </div>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <footer>
+            <div class="footClass">
+                <p>வடிவமைப்பாளர் </p>
+                <i class="fas fa-heart fa-lg footIcon" id="heart"></i>
+                <p id="developer"> மோகன் ராம். மு</p>
+                <p>, ஸ்ரீ ராமகிருஷ்ணா பொறியியல் கல்லூரி, கோயம்புத்தூர் </p>
+            </div>
+            <div class="footClass">
+                <i class="fas fa-envelope fa-lg footIcon" id="mail"></i>
+                <i class="fab fa-github fa-lg footIcon" id="github"></i>
+                <i class="fab fa-linkedin fa-lg footIcon" id="linkedin"></i>
+                <i class="fab fa-facebook-f fa-lg footIcon" id="facebook"></i>
+            </div>
+        </footer>
+
+        <br>
+
+    </div>
+
+</body>
+
+</html>
